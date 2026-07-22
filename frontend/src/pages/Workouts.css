@@ -1,0 +1,75 @@
+.ledger {
+  overflow: hidden;
+}
+
+.ledger-row {
+  display: grid;
+  grid-template-columns: 100px 1.4fr 110px 1.4fr auto;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.ledger-row:last-child {
+  border-bottom: none;
+}
+
+.ledger-head {
+  background: var(--paper-raised);
+}
+
+.ledger-date {
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.ledger-exercise {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 14px;
+}
+
+.ledger-notes {
+  font-size: 13px;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ledger-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin-bottom: 6px;
+}
+
+.checkbox-row input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--red);
+}
+
+@media (max-width: 760px) {
+  .ledger-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .ledger-head {
+    display: none;
+  }
+  .ledger-actions {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,52 @@
+.page-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.page-head h1 {
+  font-size: 30px;
+  margin-top: 4px;
+}
+
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.exercise-card {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.exercise-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exercise-duration {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.exercise-desc {
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 12px 0 0;
+  flex: 1;
+}
+
+.exercise-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
